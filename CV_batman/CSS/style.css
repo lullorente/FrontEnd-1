@@ -1,0 +1,25 @@
+header {
+    background-color: #E5E5E5;
+    text-align: center;
+}
+h1, h2 {
+    background-color: #C4C4C4;
+    letter-spacing: 0.5em;
+    color: #005677
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 18px;
+}
+.texto-resaltado {
+    font-weight: bold;
+}
+.img-redes {
+    width: 25px;
+    height: 25px;
+}
+footer {
+    background-color: darkblue;
+}

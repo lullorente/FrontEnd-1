@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section.banner {
+background-image: url(../IMG/lemon-pie\ 1.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: initial;
+padding-top: 20px;
+
+font-family: 'Open Sans', sans-serif; 
+}
+section.banner ~ section{
+max-width: 80%;
+margin: 30px auto;
+}

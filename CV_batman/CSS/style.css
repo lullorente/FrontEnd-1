@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,900&display=swap');
+
 header {
-    background-color: #E5E5E5;
+    background-color: #F5F5F5;
     text-align: center;
+    height: auto;
+    text-align: center;
+    width: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
 }
 h1, h2 {
-    background-color: #C4C4C4;
-    letter-spacing: 0.5em;
-    color: #005677
+    background-color: #F4e8dd;
+    letter-spacing: 0.2em;
+    color: black;
 }
 h1 {
     font-size: 24px;
@@ -16,10 +24,19 @@ h2 {
 .texto-resaltado {
     font-weight: bold;
 }
+.interlineado {
+    line-height: 1.5;
+    font-weight: 400;
+}
 .img-redes {
     width: 25px;
     height: 25px;
 }
-footer {
-    background-color: darkblue;
+footer.span{
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+footer{
+    text-align: center;
+    background-color: #F5F5F5;
 }

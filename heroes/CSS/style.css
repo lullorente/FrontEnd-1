@@ -5,16 +5,16 @@
     box-sizing: border-box;
     font-family: roboto;sans-serif;
 }
+aside {
+    background-color: #1CD1B0;
+    height: 30px;
+    padding: 9px;
+    font-size: 12px;
+}
 header {
     position: sticky;
     top: 0px;
     z-index: 10;
-}
-header div {
-    background-color: #1CD1B0;
-    height: 35px;
-    padding: 9px;
-    font-size: 15px;
 }
 header h1 {
     background-color: #00669F;

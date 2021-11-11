@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav {
+    background-color: black;
+    color: white;
+    background-size: cover;
+    padding-top: 5px;
+}
+.menu-idioma {
+    text-align: right;
+}
+.menu {
+    background-color: orange;
+}
+.banner {
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-size: cover;
+    padding-top: 400px;
+}
+.saludo {
+max-width: 50%;
+margin-inline: 450px;
+background-color: white;
+text-align: center;
+font-size: 1.5em;
+margin-block-start: 0.83em;
+margin-block-end: 0.83em;
+font-weight: bold;
+}
+.descuento {
+    text-align: center;
+}
+.boton-comederos {
+    background-color: #F0A83E;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+.productos-destacados {
+    text-align: center;
+}
+.suscripcion {
+    background-color: #F0A83E;
+    color: #FFFFFF;
+}
+.datos {
+    background-color: #3C2313;
+    color: white;
+    background-size: cover;
+    padding-top: 5px;
+}
+.copyright {
+    background-color: black;
+    text-align: center;
+    color: white
+}

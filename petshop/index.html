@@ -5,41 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
-<body bgcolor="F8EED7">
+<body>
 
-    <header>
-        <div><p>Grandes ofertas en comederos</p>
-            <ul>
-                <li>Español</li>
-                <li>ARG$</li>
-            </ul>
-        </div>
-    <nav>
+<header>
+    <nav id="nav">
+        <span><p>Grandes ofertas en comederos</span> 
+        <span class="menu-idioma"> ESPAÑOL </span>
+    </nav>
+    <nav class="menu">
     <img src="./img/Logo.png" alt="Logo">
     <ul type="none">
-        <li> <img src="./img/pawprint 1.png" alt="Patita de perro">
-            Categorías</li>
-        <li> <img src="./img/pawprint 2.png" alt="Patita de perro">
-            Pets</li>
-        <li> <img src="./img/Copia de pawprint 3.png" alt="Patita de perro">
-            Nosotros</li>
-        <li> <img src="./img/pawprint 3.png" alt="Patita de perro">
-            Contactos</li>
+        <li><i class="fas fa-paw"></i> Categorías</li>
+        <li><i class="fas fa-paw"></i> Pets</li>
+        <li><i class="fas fa-paw"></i> Nosotros</li>
+        <li><i class="fas fa-paw"></i> Contactos</li>
     </ul>
     </nav>
-    </header>
+</header>
     <main>
-        <section>
-            <center>
-            <img src="./img/bowl-and-pet-daities-on-green-background 1.png" alt="">
-            <p>¡Es un placer tenerte aquí!</p>
-            <p>¡Comederos en descuento!</p>
-            <p>COMEDEROS</p>
-            </center> 
+        <section class="banner">
+            <p class="saludo">¡Es un placer tenerte aquí!</p>
+            <p class= "descuento"> ¡Comederos en descuento!</p>
+            <p class= "boton-comederos">COMEDEROS</p>
         </section>
-        <section>
-            <center>
+        <section class="productos-destacados">
             <img src="./img/paw1.png" alt="Patita de perro">
             <h1>Productos destacados</h1>
                 <nav>
@@ -49,7 +41,6 @@
                         <li>Comidas</li>
                     </ul>
                 </nav>
-            </center>
             <img src="./img/churrasquito.png" alt="churrasquito">
             <p>Juguete Churrasquito</p>
             <p>$150</p>
@@ -72,18 +63,17 @@
         </section>
     </main>
     <footer>
-        <section>
+        <section class="suscripcion">
         <span>
             <img src="./img/Group.png" alt="correo">
             Suscríbete para más novedades
         </span>
-    
         <span>
-           <p> Ingresá tu correo electrónico</p>
-          <p align="right"> Suscribime</p>
+        <p> Ingresá tu correo electrónico</p>
+        <p> Suscribime</p>
         </span>
         </section>
-        <section>
+        <section class="datos">
         <span>
             <img src="./img/Icono.png" alt="logo de locacion">
         </span>
@@ -93,7 +83,7 @@
             Calle-Provincia
         </span>
         </section>
-        <section>
+        <section class="datos">
         <span>
             <img src="./img/Icono-2.png" alt="logo de telefono">
         </span>
@@ -103,12 +93,12 @@
             Número de teléfono
         </span>
         </section>
-        <section>
+        <section class="datos">
         <span>
             <img src="./img/Logo-2.png" alt="logo Pet Shop" align="right">
         </span>
         </section>
-        <section>
+        <section class="datos">
         <span>
             <img src="./img/Icono-3.png" alt="logo de correo">
         </span>
@@ -118,10 +108,8 @@
             Dirección de correo
         </span>
         </section>
-        <section> 
-                <center>
+        <section class= "copyright"> 
                 <p>Todos los derechos reservados Front End</p>
-                </center>
         </section>
     </footer>
 </body>

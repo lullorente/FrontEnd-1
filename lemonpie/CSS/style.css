@@ -9,9 +9,7 @@ background-image: url(../IMG/lemon-pie\ 1.jpg);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
-background-attachment: initial;
-padding-top: 20px;
-
+padding-top: 250px;
 font-family: 'Open Sans', sans-serif; 
 }
 section.banner ~ section{

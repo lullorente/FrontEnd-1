@@ -11,16 +11,16 @@
 <body>
 
 <header>
-    <nav id="nav">
-        <p>Grandes ofertas en comederos</p>
-        <ul>
-            <li>ESPAÑOL</li>
-            <li>ES</li>
-        </ul> 
-    </nav>
+    <div class="header1">
+        <div class="ofertas">Grandes ofertas en comederos</div>
+        <div class="idioma">
+            <div>ESPAÑOL</div>
+            <div>ES</div>
+        </div>    
+    </div>
     <nav class="menu">
-    <img class="logo-menu" src="./img/Logo.png" alt="Logo">
-    <ul type="none">
+    <img src="./img/Logo.png" alt="Logo">
+    <ul class="categorias" type="none">
         <li><i class="fas fa-paw"></i> Categorías</li>
         <li><i class="fas fa-paw"></i> Pets</li>
         <li><i class="fas fa-paw"></i> Nosotros</li>
@@ -39,29 +39,48 @@
             <img src="./img/paw1.png" alt="Patita de perro">
             <h1>Productos destacados</h1>
                 <nav>
-                    <ul>
+                    <ul class="opciones">
                         <li>Comederos</li>
                         <li>Accesorios</li>
                         <li>Comidas</li>
                     </ul>
                 </nav>
+            <div class="articulos">
+                <article>
             <img src="./img/churrasquito.png" alt="churrasquito">
-            <p>Juguete Churrasquito</p>
-            <p>$150</p>
+            <div class="texto-article">
+            <a href="*">Juguete Churrasquito</a>
+            <a href="*">$150</a>
+            </div>
+                </article>
+                <article>
             <img src="./img/comedero.png" alt="comedero para perro"> 
-            <p>Comedero para perro</p>
-            <p>$250</p>
+            <div class="texto-article"> 
+            <a href="*">Comederos de perros</a>
+            <a href="*">$250</a>
+            </div>
+                </article>
+            <article>
             <img src="./img/Huesito.png" alt="jueguete huesito">
-            <p>Juguete Huesito</p>
-            <p>$650</p>
+            <div class="texto-article"> 
+            <a href="*">Juguete de huesito</a>
+            <a href="*">$650</a>
+            </div>
+            </article>
         </section>   
-        <section>
+        <section class="contactanos">
                     <h2>Contáctanos</h2>
-                    <p>Nombre y Apellido</p>
-                    <p>Ingresá tu correo electrónico</p>
-                    <p>Teléfono</p>
-                    <span>Resetear</span>
-                    <span>Enviar</span>
+                    <ul type="none">
+                    <li>Nombre y Apellido</li>
+                    <li>Ingresá tu correo electrónico</li>
+                    <li>Teléfono</li>
+                    </ul>
+                    <div>
+                        <a href="*"> Resetear</a>
+                    </div>
+                    <div>
+                        <a href="*">Enviar</a>
+                    </div>
         </section>
     </main>
     <footer>
@@ -86,32 +105,32 @@
         </span>
         </section>
         <section class="datos">
-        <span>
-            <img src="./img/Icono-2.png" alt="logo de telefono">
-        </span>
-        <span>
-            Teléfono
-            <br>
-            Número de teléfono
-        </span>
+            <span>
+                <img src="./img/Icono-2.png" alt="logo de telefono">
+            </span>
+            <span>
+                Teléfono
+                <br>
+                Número de teléfono
+            </span>
         </section>
         <section class="datos">
-        <span>
-            <img src="./img/Logo-2.png" alt="logo Pet Shop">
-        </span>
         </section>
         <section class="datos">
-        <span>
-            <img src="./img/Icono-3.png" alt="logo de correo">
-        </span>
-        <span>
-            Correo Electrónico
-            <br>
-            Dirección de correo
-        </span>
+            <span>
+                <img src="./img/Icono-3.png" alt="logo de correo">
+            </span>
+            <span>
+                Correo Electrónico
+                <br>
+                Dirección de correo
+            </span>
+            <span>
+                <img class="logofooter" src="./img/Logo-2.png" alt="logo Pet Shop">
+            </span>
         </section>
         <section class= "copyright"> 
-                <p>Todos los derechos reservados Front End</p>
+            <p>Todos los derechos reservados Front End</p>
         </section>
     </footer>
 </body>

@@ -39,10 +39,6 @@ body {
 h1 {
     font-size: 2rem;
 }
-/* main {
-    margin-left: 5%;
-    margin-right: 5%;
-} */
 .hola {
 display: flex;
 flex-direction: column-reverse;
@@ -77,6 +73,33 @@ img.pequeña {
     justify-content: flex-end;
     margin-top: 10%;
     }
+.manage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    }
+.principal2 {
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #232C50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+.secundaria2 {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin-top: 5%;
+    }
 .listado {
     display: flex;
     flex-wrap: wrap;
@@ -88,58 +111,66 @@ img.pequeña {
     margin-right: 10%;
     margin-bottom: 10%;
 }
-.manage {
+.listado span {
+    background-color: rgb(242, 95, 58);
+    border-radius: 35px;
+    color: white;
+    padding: 9px 27px;
+    width: 79px;
+    height: 39px;
+    font-weight: bold;
+    display: flex;
+}
+.listado h3 {
+    background-color: #FCB4A3;
+    width: 100%;
+    height: 40px;
+    color: #323851;
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+}
+.listado p {
+    color: #B3B2B7;
+    text-align: justify;
+}
+.hola3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 27px;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 10%;
-}
-.principal2 {
-    text-align: justify;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #232C50;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.secundaria2 {
-    font-size: 0.9rem;
-    text-align: justify;
-    margin-top: 5%;
-}
-.listado h3 {
-    color: #323851;
-    text-align: justify ;
-}
-.listado span {
-    color: #B3B2B7;
-    text-align: justify;
 }
 .comentarios {
 margin-top: 5%;
 display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-padding: 40px;
 }
 article{
-height: 200px;
+height: 300px;
+/* width: 450px; */
+text-align: center;
 background-color: #FAFAFA;
 display: flex;
 flex-direction: column;
+align-items: center;
 flex-wrap: wrap;
-padding: 10px;
-text-align: justify;
+padding: 55px;
+gap: 2px;
+color: #B9B9C1;
+position: relative;
+}
+article img {
+    position: absolute;
+    top: -10%;
+    left: 37%;
+    height: 60px;
+}
+.hola3 h2, article h4 {
+    color: #3F4868;
 }
 .boton-articulos {
     text-align: center;
@@ -150,15 +181,19 @@ text-align: justify;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 1.6rem;
-    line-height: 48px;
-    height: 19vh;
+    line-height: 35px;
+    height: 30vh;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 .Simplify span {
-    margin-left: 10%;
-    margin-right: 35%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
 }
 .Simplify .boton-started {
     width: 134px;
@@ -166,12 +201,45 @@ text-align: justify;
     background-color: #FFFFFF;
     color:#F3603B;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    margin-right: 8%;
 }
 footer {
     background-color: #1E1E26;
-    height: 18vh;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* height: 100px; */
+    /* padding: 4%; */
 }
+footer div.logo-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+}
+div .redes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+/* .logo-redes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.redes {
+    display: flex;
+    flex-direction: row;
+}
+.navfooter {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+} */
 .boton-go {
     width: 45px;
     height: 25px;
@@ -191,11 +259,9 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
-    
     .navbar nav {
         width: 80%;
     }
-    
     .navbar nav ul {
         display: flex;
         gap: 25px;
@@ -237,13 +303,8 @@ footer {
         font-size: 0.8rem;
         margin-top: 10%;
         }
-        .listado {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
+        .listado h3 {
+            gap: 50px;
         }
         .manage {
             display: flex;
@@ -253,9 +314,25 @@ footer {
             gap: 30px;
             margin-left: 1%;
         }
-
-
-
+        article {
+            gap: 20px;
+        }
+        article img {
+            position: absolute;
+            top: -15%;
+            left: 42%;
+            height: 70px;
+        }
+        .Simplify {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .Simplify span {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
         .comentarios {
             margin-top: 5%;
             display: flex;

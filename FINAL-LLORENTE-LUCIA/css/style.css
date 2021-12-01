@@ -4,34 +4,72 @@
     margin: 0;
     padding: 0;
 }
+
+/* ESTADOS */
+
+
+button:hover {
+    background: rgb(249, 143, 117);
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+button a:visited {
+    color: inherit;
+}
+li a:active {
+    color:#B3B2B7; 
+    cursor: pointer; 
+}
+.redes i:hover {
+    color: #F3603B;
+    cursor: pointer; 
+}
+ul a:visited {
+    color: inherit;
+}
+.boton-go:hover {
+    cursor: pointer;
+}
+
+/* HEADER */
+
+
 header {
-    height: 100px;
+    /* height: 100px; */
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 10%;
 }
 header div {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 125px;
 }
 .navbar {
     display: none;
 }
-button:hover {
-    background: rgb(249, 143, 117);
-}
 .boton-started {
     width: 134px;
     height: 44px;
-    color: white;
+    color: #FFFFFF;
     background-color: #F3603B;
+    border: #F3603B;
     border-radius: 50px;
     box-shadow: 10%;
     padding: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.5s ease both;
+    -webkit-transition: background-color 0.5s ease both;
+    -moz-transition: background-color 0.5s ease both;
+    -ms-transition: background-color 0.5s ease both;
+    -o-transition: background-color 0.5s ease both;
 }
+
+/* BODY */
+
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
@@ -39,12 +77,16 @@ body {
 h1 {
     font-size: 2rem;
 }
-.hola {
-display: flex;
-flex-direction: column-reverse;
-justify-content: flex-end;
+/* SECTION 1 */
+
+.principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
 }
-.s {
+
+.text-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -54,129 +96,135 @@ justify-content: flex-end;
     margin-left: 10%;
     margin-right: 10%;
 }
-img.pequeña {
+.image-container img {
     width: 100%;
 }
-.principal {
+
+.text-container h1, .text-container h2 {
     text-align: justify;
     font-size: 2rem;
     font-weight: 700;
     color: #232C50;
 }
-.secundaria {
+
+.text-container span {
     font-size: 1rem;
     text-align: justify;
 }
-.hola2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+
+/* SECCION 2 */
+
+
+.secundaria {
     margin-top: 10%;
-    }
-.manage {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
-    }
-.principal2 {
-    text-align: justify;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #232C50;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    }
-.secundaria2 {
+    width: 100%;
+}
+
+.secundaria .text-container span {
     font-size: 0.9rem;
     text-align: justify;
     margin-top: 5%;
-    }
-.listado {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 10%;
 }
-.listado span {
-    background-color: rgb(242, 95, 58);
-    border-radius: 35px;
-    color: white;
-    padding: 9px 27px;
-    width: 79px;
-    height: 39px;
-    font-weight: bold;
-    display: flex;
+
+.list-container {
+    width: 350px;
+    margin-top:50px;
 }
-.listado h3 {
-    background-color: #FCB4A3;
+
+.list-container>h3 {
+    color: rgb(35, 44, 81);
     width: 100%;
-    height: 40px;
-    color: #323851;
-    display: flex;
-    gap: 10px;
+    height: 30px;
     font-size: 1rem;
+    background-color: rgb(255, 239, 234);
+    margin-left: 25px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    text-align: center;
+    padding:0.5em 0 0 1em;
 }
-.listado p {
-    color: #B3B2B7;
-    text-align: justify;
+
+.list-container>p {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: rgb(143, 148, 167);
+    text-align: start;
+    margin: 10px 10px 20px 30px;
+    line-height: 1.2rem;
 }
-.hola3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 27px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.comentarios {
-margin-top: 20%;
-margin-bottom: 10%;
-display: flex;
-flex-direction: column;
-}
-article{
-height: 300px;
-/* width: 450px; */
-text-align: center;
-background-color: #FAFAFA;
-display: flex;
-flex-direction: column;
-align-items: center;
-flex-wrap: wrap;
-padding: 55px;
-gap: 2px;
-color: #B9B9C1;
-position: relative;
-}
-article img {
+
+.item-number {
+    background-color: rgb(242, 95, 58);
     position: absolute;
-    top: -10%;
+    top: 0px;
+    left: 0px;
+    padding-top: 8px;
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    color: rgb(249, 249, 249);
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: .7rem;
+}
+
+/* TESTIMONIOS */
+
+.testimonios h2 {
+    color: #3F4868;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.person {
+    height: 320px;
+    position: relative;
+}
+.person>img {
+    position: absolute;
+    top: 0%;
     left: 37%;
     height: 60px;
+    width: 60px;
 }
-.hola3 h2, article h4 {
+
+.testimonios-text-container {
+    width: 90%;
+    height: 200px;
+    padding-top: 65px;
+}
+h4 {
     color: #3F4868;
+    padding-bottom: 10px;
+    text-align: center;
 }
+.testimonios-text-container>span {
+    width: 85%;
+    font-size: 0.8rem;
+    color: #B9B9C1;
+}
+
+.testimonios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
 .boton-articulos {
     text-align: center;
     margin-bottom: 10%;
 }
+
+/* SIMPLIFY */
+
+
 .Simplify {
     background-color: #F3613C;
     color: #FFFFFF;
@@ -203,73 +251,112 @@ article img {
     color:#F3603B;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
+
+/* FOOTER */
+
+
 footer {
     background-color: #1E1E26;
-    height: 35%;
+    height: 380px;
     display: flex;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-footer div.logo-redes {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    margin-left: 100px;
+    position: relative;
 }
+
+footer div.logo-redes {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
 div .redes {
+    color: #FFFFFF;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 24px;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
 }
+
 .navfooter nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 155px;
+    gap: 40px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color:#FFFFFF;
 }
+
 .navfooter nav ul div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 15px;
-    margin-top: 18px;
-    margin-bottom: 18px;
     font-size: 0.9rem;
 }
+
 .formulario {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     gap: 30px;
-    margin-right: 100px;
     color: #8C8C94;
 }
+
+.formulario form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer form .email {
+    height: 30px;
+    width: 200px;
+    border-radius: 50px;
+    color: #8C8C94;
+    padding: 6px;
+}
+
 footer span {
     font-size: 0.6rem;
     text-align: right;
 }
+
+footer div span {
+    position: absolute;
+    top: 350px;
+    margin-top: 5px;
+}
+
 .boton-go {
     width: 45px;
-    height: 25px;
+    height: 30px;
     color: white;
     background-color: #F3603B;
+    border: #F3603B;
     border-radius: 50px;
     box-shadow: 10%;
     padding: 5px;
 }
+
+/* MEDIA QUERIES */
+
 @media screen and (min-width: 376px) {
-    #hamburguesa{
+    #icono-menu {
         display: none;
     }
+    header div {
+        gap: 105px;
+    }
     .navbar {
-        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-left: 100px;
     }
     .navbar nav {
         width: 80%;
@@ -289,12 +376,14 @@ footer span {
         padding: 5px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     }
-    .hola {
+    /* SECTION 1 */
+
+    .principal {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .s {
+    .text-container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -304,21 +393,40 @@ footer span {
         margin-left: 10%;
         margin-right: 10%;
     }
-    .g {
+    .image-container {
         margin-right: 10%;
     }
-    .hola2 {
+    /* SECTION 2 */
+
+    .text-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .list-container {
+        margin-top: 0;
+    }
+
+    .list-container h3 { 
+        text-align: start;
+        padding-left: 0;
+        background-color: #FFFFFF;
+        border-bottom-left-radius: 0px;
+    }
+
+    .item-number {
+        text-align: center;
+        left: -50px;
+    }
+
+    .secundaria {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        margin-left: 10%;
-        font-size: 0.8rem;
-        margin-top: 10%;
+        justify-content: space-between;
+        width: 100%;
+        gap: 15px;
     }
-    .listado h3 {
-        gap: 50px;
-    }
-    .manage {
+
+    .secundaria .text-container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -326,18 +434,43 @@ footer span {
         gap: 30px;
         margin-left: 1%;
     }
-    .comentarios {
-        margin-bottom: 0;
+
+    /* SECTION TESTIMONIOS */
+
+    .testimonios-text-container {
+        height: 200px;
+        padding-top: 70px;
+        width: 90%;
     }
-    article {
-        gap: 20px;
+    .person {
+        height: 300px;
     }
-    article img {
+    person>img {
         position: absolute;
         top: -15%;
-        left: 42%;
+        left: 39%;
         height: 70px;
     }
+    .testimonios-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    h4 {
+        width: 85%;
+        padding-bottom: 10px;
+    }
+    .testimonios-text-container>p {
+        width: 85%;
+    }
+    .testimonios h2 {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    
+    /* SIMPLIFY */
+    
     .Simplify {
         height: 20vh;
         display: flex;
@@ -349,12 +482,43 @@ footer span {
         margin-left: 4%;
         margin-right: 5%;
     }
-    .comentarios {
-        margin-top: 5%;
+
+
+    /* FOOTER */
+
+    footer {
+        height: 200px;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+    }
+    footer div.logo-redes {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 100px;
+    }
+    div .redes {
+        gap: 19px;
+        font-size: 1rem;
+    }
+    .navfooter nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 155px;
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        gap: 10px;
-        padding: 40px;
+        gap: 20px;
+        margin-right: 80px;
+        margin-bottom: 80px;
+    }
+    footer form .email {
+        width: 250px;
+    }
+    footer div span {
+        position: absolute;
+        top: 150px;
     }
